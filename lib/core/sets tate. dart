@@ -1,0 +1,22 @@
+1. SetState is the basic and built-in state management 
+method in Flutter. Used for local widget-level state 
+Rebuilds the entire widget when state changes
+Simple and easy to use > Not suitable for large or complex 
+applications Best for: small screens, simple UI updates 
+2. ProviderProvider is a wrapper around InheritedWidget
+and is widely used. Separates business logic from UIUses
+ChangeNotifier and notifyListeners() Improves code 
+readability and reusability Easy to learn and maintain
+Can become complex for very large apps
+Best for: medium-scale applications
+3.Riverpod: riverpod is an improved and safer version of 
+Provider. > No dependency on BuildContext Compile-time 
+safety Better performance and scalability Easy testing 
+support Slight learning curve compared to Provider
+Best for: scalable and production-level apps
+4. GetX :GetX is a lightweight and all-in-one solution. 
+Handles state management, navigation, and dependency 
+injection Very fast performance Minimal boilerplate code 
+Easy to use for beginners Overuse can lead to poor 
+architecture if not structured well Best for: rapid 
+development and small-to-medium apps
