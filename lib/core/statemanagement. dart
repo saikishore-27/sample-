@@ -1,0 +1,27 @@
+State management is the process of controlling, 
+updating, and sharing data (state) in an application so 
+that the UI always reflects the latest data correctly.
+USING BLOC AND EQUATABLE
+“BLOC is a state management pattern for Flutter that 
+enforces separation between UI and business logic via 
+events and states. The UI dispatches events, the Bloc 
+runs logic and emits states, and the UI reacts. It’s great 
+for testability, predictability and scaling large apps; 
+use Cubit when you want a lighter-weight option.”
+THE MAIN ELEMENTS BLOC=>
+1.Build When : BuildWhen takes the previous bloc 
+state and current bloc state and returns a boolean.
+If buildWhen returns true, builder will be called with 
+state and the widget will rebuild.
+If buildWhen returns false, builder will not be called 
+with state and no rebuild will occur. 
+2.BlocBuilder: for rebuilding UI on state change 
+Rebuilds a widget in response to new states emitted by 
+Bloc/Cubit. 3.BocListener – for one-time side effects
+ Purpose> Listens to Bloc state changes but does 
+not rebuild UI. >Used for side effects like: , Navigation 
+,Showing a SnackBar Showing Dialog ,4. BlocConsumer
+– combines BlocBuilder + BlocListener Purpose: A 
+shortcut to use both UI rebuild (BlocBuilder) and side 
+effects (BlocListener) together.Has both a listener and 
+builder. 5. BlocProvide 6. Bloc Repository
